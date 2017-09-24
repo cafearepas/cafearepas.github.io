@@ -1,0 +1,367 @@
+	<!--
+ █▄  █ █▀▀█ ▄█▀█▄ █▄   ▄█ █  
+ █▀█▄█ █▄▄█ █   █ █▀█▄█▀█ █
+ █   █ █  █ ▀█▄█▀ █     █ █
+ -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Menu | Cafe Arepas</title>
+	<meta charset="utf-8">
+
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Oswald:700" rel="stylesheet">
+
+	<!-- JQUERY FROM GOOGLE -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- FANCYBOX -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+	<script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+
+	
+	<!-- NAVIGATION SCRIPT -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.hamburger').click(function(){
+		    console.log('fun');
+		    $('.hamburger-ul').toggleClass('hamburger-display');
+		});
+		  $(function() {
+		    var scrolldiv = $("header");
+		    h = $(window).height(); 
+
+		    $(window).scroll(function() {
+		        if($(this).scrollTop() > 100 ) { 
+		                $(scrolldiv).css('background', '#282828'); 
+		            }
+		        else {
+		            $(scrolldiv).css('background', 'transparent'); 
+		        }
+		    })
+			});
+		});
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body id="menu">
+	<header>
+	  <article class="one">
+	    <a href="index.html">Cafe Arepas</a>
+	  </article>
+	  <article class="hamburger">
+	    <p>☰</p>
+	  </article>
+	  <ul class="hamburger-ul">
+	    <li><a href="about.html">About</a></li>
+	    <li><a href="menu.html">Menu</a></li>
+	    <li><a href="catering.html">Catering</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+	  </ul>
+	  <nav>
+	    <ul class="two">
+	      <li><a href="about.html">About</a></li>
+	    	<li><a href="menu.html">Menu</a></li>
+	    	<li><a href="catering.html">Catering</a></li>
+	    	<li><a href="contact.html">Contact</a></li>
+	    </ul>
+
+	    <article class="three">
+	      <ul>
+	        <li><a href="#">fb</a></li>
+	        <li><a href="#">tw</a></li>
+	        <li><a href="#">ig</a></li>
+	        <li><a href="#">g+</a></li>
+	      </ul>
+	    </article>
+	  </nav>
+	</header>
+
+	<section class="menu-top-img">
+		<section class="top-img-text">
+			<h1>Our Menu</h1>
+			<h3>Good food, good coffee, good, juice.</h3>
+		</section>
+	</section>
+
+
+	<section class="menu-items">
+		<section class="container">
+			<h2 class="menu-h2">Café standards</h2>
+
+			<section class="row">
+				<article class="six columns">
+					<h2 class="red">01</h2>
+					<p><strong>Colada cubana (espresso)</strong></p>
+					<p>Small $1.95 / Large $2.50</p>
+				</article>
+
+				<article class="six columns">
+					<h2 class="red">02</h2>
+					<p><strong>Café con leche (latte)</strong></p>
+					<p>Small $3.25 / Medium $3.65 / Large $3.95</p>
+				</article>
+			</section>
+
+			<section class="row">
+				<article class="six columns">
+					<h2 class="red">03</h2>
+					<p><strong>Cappuccino (espresso with froth)</strong></p>
+					<p>Small $3.75 / Medium $4.30 / Large $4.55</p>
+				</article>
+
+				<article class="six columns">
+					<h2 class="red">04</h2>
+					<p><strong>Cortado (maciado)</strong></p>
+					<p>Small $2.25 / Large $2.85</p>
+				</article>
+			</section>
+
+			<section class="row">
+				<article class="six columns">
+					<h2 class="red">05</h2>
+					<p><strong>Café orgánico del día (coffe of the day)</strong></p>
+					<p>Small $1.50 / Medium $1.75 / Large $1.95</p>
+				</article>
+
+				<article class="six columns">
+					<h2 class="red">06</h2>
+					<p><strong>Oaxacan hot chocolate (zapotec blend)</strong></p>
+					<p>Small $2.50 / Medium $3.00 / Large $3.50</p>
+				</article>
+			</section>
+		</section>
+	</section>
+
+		<section class="clearfix"></section>
+
+
+	<section class="menu-items">
+		<section class="container">
+
+			<h2 class="menu-h2">Arepas signature</h2>
+
+			<section class="row">
+				<article class="six columns">
+					<h2 class="red">01</h2>
+					<p><strong>Café Bolívar (latte sweetened with condensed milk)</strong></p>
+					<p>Small $3.75 / Medium $4.30 / Large $4.55</p>
+				</article>
+
+				<article class="six columns">
+					<h2 class="red">02</h2>
+					<p><strong>Café Tacuba (latte sweetened with cajeta (Mexican caramel)</strong></p>
+					<p>Small $3.75 / Medium $4.30 / Large $4.55</p>
+				</article>
+			</section>
+
+			<section class="row">
+				<article class="six columns">
+					<h2 class="red">03</h2>
+					<p><strong>Café con leche, vainilla y miel (honey vanilla latte)</strong></p>
+					<p>Small $3.75 / Medium $4.30 / Large $4.55</p>
+				</article>
+
+				<article class="six columns">
+					<h2 class="red">04</h2>
+					<p><strong>Mocha Oaxaqueño (sweetened with Oaxacan chocolate)</strong></p>
+					<p>Small $3.75 / Medium $4.30 / Large $4.55</p>
+				</article>
+			</section>
+
+			<section class="row">
+				<article class="six columns">
+					<h2 class="red">05</h2>
+					<p><strong>Mocha Belga (Belgium hot chocolate)</strong></p>
+					<p>Small $3.75 / Medium $4.30 / Large $4.55</p>
+				</article>
+
+				<article class="six columns">
+					<h2 class="red">06</h2>
+					<p><strong>Bon Bon (espresso & condensed milk)</strong></p>
+					<p>Small $3.75 / Medium $4.30 / Large $4.55</p>
+				</article>
+			</section>
+		</section>
+	</section>
+
+	<section class="image-block">
+		<a data-fancybox="gallery" class="outline" href="img/menu-2-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-2.jpg">
+			</figure>
+		</a>
+
+		<a data-fancybox="gallery" class="outline" href="img/menu-3-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-3.jpg">
+			</figure>
+		</a>
+
+		<a data-fancybox="gallery" class="outline" href="img/menu-4-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-4.jpg">
+			</figure>
+		</a>
+
+		<a data-fancybox="gallery" class="outline" href="img/menu-5-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-5.jpg">
+			</figure>
+		</a>
+
+		<a data-fancybox="gallery" class="outline" href="img/menu-6-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-6.jpg">
+			</figure>
+		</a>
+
+		<a data-fancybox="gallery" class="outline" href="img/menu-7-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-7.jpg">
+			</figure>
+		</a>
+	</section>
+
+	<section class="clearfix"></section>
+	<section class="catering-info">
+		<section class="container">
+			<h2 class="menu-h2 arepas">Arepas</h2>
+			<p class="eight columns offset-by-two">The arepa is a corn-based dish from the northern region of South America. Made from a specially milled pre- cooked white corn meal, our arepas are prepared in the Caracas tradition. A healthy alternative, arepas are wheat-free, gluten free and nut-free. Each arepa is made fresh to order so please allow for extra time. 
+			</p>
+		</section>
+	</section>
+	<section class="menu-items">
+		<section class="container">
+
+			<section class="row">
+				<article class="six columns">
+					<h2 class="red">01</h2>
+					<p><strong>Black beans...$4.00</strong></p>
+					<p>Caribbean style black beans and fresh white cheese.</p>
+				</article>
+
+				<article class="six columns">
+					<h2 class="red">02</h2>
+					<p><strong>Albacore...$4.50</strong></p>
+					<p>Solid white albacore marinated in light extra virgin olive oil, peppers, roma tomatoes and red onion, & mayonnaise. Tossed in our cilantro mojo.</p>
+				</article>
+			</section>
+			<section class="clearfix"></section>
+			<section class="row">
+				<article class="six columns">
+					<h2 class="red">03</h2>
+					<p><strong>Premium cooked ham...$4.50</strong></p>
+					<p>Premium cooked ham with your choice of fresh white cheese or Gouda.</p>
+				</article>
+
+				<article class="six columns">
+					<h2 class="red">04</h2>
+					<p><strong>Slices of ripe mangos...$5.00</strong></p>
+					<p>Slices of fresh ripe mangoes, avocado and fresh white cheese, garlic confit and rosemary aioli.</p>
+				</article>
+			</section>
+			<section class="row">
+				<article class="six columns">
+					<h2 class="red">05</h2>
+					<p><strong>Grilled chicken breast...$5.00</strong></p>
+					<p>Grilled chicken breast tossed in avocado pure, garlic confit and rosemary aioli.</p>
+				</article>
+
+				<article class="six columns">
+					<h2 class="red">06</h2>
+					<p><strong>Mozzarella...$6.00</strong></p>
+					<p>Fresh mozzarella, garlic and thyme infused roasted red peppers, and crispy bacon.</p>
+				</article>
+			</section>
+			<section class="row">
+				<article class="six columns">
+					<h2 class="red">07</h2>
+					<p><strong>Pulled Pork...$6.00</strong></p>
+					<p>Pulled pork shoulder cooked for 8 hours in Caribbean spices.</p>
+				</article>
+
+				<article class="six columns">
+					<h2 class="red">08</h2>
+					<p><strong>Flank Stake...$6.00</strong></p>
+					<p>Pulled marinated and slow cooked in tomato broth and Caribbean spices beef flank stake.</p>
+				</article>
+			</section>
+			</section>
+
+	<section class="clearfix"></section>
+
+
+<section class="image-block">
+		<a data-fancybox="gallery" class="outline" href="img/menu-8-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-8.jpg">
+			</figure>
+		</a>
+
+		<a data-fancybox="gallery" class="outline" href="img/menu-9-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-9.jpg">
+			</figure>
+		</a>
+
+		<a data-fancybox="gallery" class="outline" href="img/menu-10-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-10.jpg">
+			</figure>
+		</a>
+
+		<a data-fancybox="gallery" class="outline" href="img/menu-11-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-11.jpg">
+			</figure>
+		</a>
+
+		<a data-fancybox="gallery" class="outline" href="img/menu-12-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-12.jpg">
+			</figure>
+		</a>
+
+		<a data-fancybox="gallery" class="outline" href="img/menu-13-big.jpg">
+			<figure class="one-image-block">
+				<img src="img/menu-13.jpg">
+			</figure>
+		</a>
+	</section>
+
+<section class="clearfix"></section>
+	<section class="contact-call">
+		<h2>Get in touch</h2>
+		<section class="button-wrapper">
+			<button>Learn More</button>
+		</section>
+	</section>
+	<footer>
+		<h1>Cafe Arepas</h1>
+		<ul>
+			<li><h3>Find us on</h3></li>
+			<li class="fade"><a href="facebook.com">Facebook</a></li>
+			<li class="fade"><a href="instagram.com">Instagram</a></li>
+			<li class="fade"><a href="twitter.com">Twitter</a></li>
+			<li class="fade"><a href="google.com">Google+</a></li>
+		</ul>
+
+		<ul>
+			<li><h3>Navigation</h3></li>
+			<li class="fade"><a href="index.html">Home</a></li>
+			<li class="fade"><a href="about.html">About</a></li>
+			<li class="fade"><a href="menu.html">Menu</a></li>
+			<li class="fade"><a href="catering.html">Catering</a></li>
+			<li class="fade"><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<ul>
+			<li><h3>Contact</h3></li>
+			<li class="fade"><a href="">100 Ocean Park Blvd <br>Santa Monica, Ca</a></li>
+			<li class="fade"><a href="">123.456.7891</a></li>
+		</ul>
+	</footer>
+</body>
+</html>

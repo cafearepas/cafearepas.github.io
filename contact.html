@@ -1,0 +1,159 @@
+	<!--
+ █▄  █ █▀▀█ ▄█▀█▄ █▄   ▄█ █  
+ █▀█▄█ █▄▄█ █   █ █▀█▄█▀█ █
+ █   █ █  █ ▀█▄█▀ █     █ █
+ -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Contact | Cafe Arepas</title>
+	<meta charset="utf-8">
+
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Oswald:700" rel="stylesheet">
+
+	<!-- JQUERY FROM GOOGLE -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- NAVIGATION SCRIPT -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.hamburger').click(function(){
+		    console.log('fun');
+		    $('.hamburger-ul').toggleClass('hamburger-display');
+		});
+		  $(function() {
+		    var scrolldiv = $("header");
+		    h = $(window).height(); 
+
+		    $(window).scroll(function() {
+		        if($(this).scrollTop() > 100 ) { 
+		                $(scrolldiv).css('background', '#282828'); 
+		            }
+		        else {
+		            $(scrolldiv).css('background', 'transparent'); 
+		        }
+		    })
+			});
+		});
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body id="menu">
+	<header>
+	  <article class="one">
+	    <a href="index.html">Cafe Arepas</a>
+	  </article>
+	  <article class="hamburger">
+	    <p>☰</p>
+	  </article>
+	  <ul class="hamburger-ul">
+	    <li><a href="about.html">About</a></li>
+	    <li><a href="menu.html">Menu</a></li>
+	    <li><a href="catering.html">Catering</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+	  </ul>
+	  <nav>
+	    <ul class="two">
+	      <li><a href="about.html">About</a></li>
+		    <li><a href="menu.html">Menu</a></li>
+		    <li><a href="catering.html">Catering</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+	    </ul>
+
+	    <article class="three">
+	      <ul>
+	        <li><a href="#">fb</a></li>
+	        <li><a href="#">tw</a></li>
+	        <li><a href="#">ig</a></li>
+	        <li><a href="#">g+</a></li>
+	      </ul>
+	    </article>
+	  </nav>
+	</header>
+
+	<section class="contact-top-img">
+		<section class="top-img-text">
+			<h1>Contact Us</h1>
+			<h3>Call us, email us, or stop on by</h3>
+		</section>
+	</section>
+
+	<section class="contact-info">
+		<section class="container">
+			<article>
+			  <h2>Call us</h2>
+				<p>123.456.7891</p>
+			</article>
+			<article>
+			  <h2>Email us</h2>
+				<p>info@cafearepas.com</p>
+			</article>
+			<article>
+			  <h2>Location</h2>
+				<p>1000 Ocean Park Boulevard <br>
+	Santa Monica, Ca 90000</p>
+			</article>
+		</section>
+	</section>
+
+	<section>
+		<div id="map"></div>
+	</section>
+	<section class="clearfix"></section>
+	<section class="contact-form">
+		<h2>Get in touch today</h2>
+		<form>
+			<section class="container">
+				<input type="text" name="" placeholder="Name*"> <br>
+				<input type="email" name="" placeholder="Email*"> <br>
+				<textarea rows="10" placeholder="Type your message here..."></textarea>
+				<button>Submit</button>
+			</section>
+		</form>
+	</section>
+	<footer>
+		<h1>Cafe Arepas</h1>
+		<ul>
+			<li><h3>Find us on</h3></li>
+			<li class="fade"><a href="facebook.com">Facebook</a></li>
+			<li class="fade"><a href="instagram.com">Instagram</a></li>
+			<li class="fade"><a href="twitter.com">Twitter</a></li>
+			<li class="fade"><a href="google.com">Google+</a></li>
+		</ul>
+
+		<ul>
+			<li><h3>Navigation</h3></li>
+			<li class="fade"><a href="index.html">Home</a></li>
+			<li class="fade"><a href="about.html">About</a></li>
+			<li class="fade"><a href="menu.html">Menu</a></li>
+			<li class="fade"><a href="catering.html">Catering</a></li>
+			<li class="fade"><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<ul>
+			<li><h3>Contact</h3></li>
+			<li class="fade"><a href="">100 Ocean Park Blvd <br>Santa Monica, Ca</a></li>
+			<li class="fade"><a href="">123.456.7891</a></li>
+		</ul>
+	</footer>
+	<script>
+      function initMap() {
+        var uluru = {lat: 34.0132869, lng: -118.4658334};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru,
+          styles: [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+	<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2L5olbYBkTjpKXrTdSlOenNtDMXtsmOI&callback=initMap">
+</script>
+</body>
+</html>
